@@ -1,0 +1,50 @@
+<ion-view view-title="Palestra - {{palestra.tema}}">
+  <ion-content>
+    <div class="card ">
+      <div class="item item-divider">
+        {{palestra.tema}}
+      </div>
+      <div class="item item-text-wrap ">
+        <div class="col">
+          <i class="ion-calendar"></i>
+          {{palestra.inicio | date:'dd/MM/yyyy'}}
+        </div>
+        <div class="col">
+          <i class="ion-clock"></i>
+          {{palestra.inicio | date:'HH:mm'}}
+          -
+          {{palestra.fim | date:'HH:mm'}}
+        </div>
+      </div>
+      <div class="item text-center item-divider anotacoes">
+        <a href="#" ng-click="modal.show()">
+          <i class="ion-compose"></i>
+        {{btn_anotacoes_txt}} anotações</a>
+      </div>
+    </div>
+
+    <div class="list card" ng-repeat="palestrante in palestrantes">
+      <a href="#/teva/perfilpalestrante/{{palestrante.id_palestrante}}">
+        <div class="item item-divider">
+          {{palestrante.nome}}
+        </div>
+        <div class="item item-avatar">
+          <img src="img/usuario.png">
+          <h2>{{palestrante.nome}}</h2>
+          <p>{{palestrante.cargo}}</p>
+        </div>
+      </a>
+    </div>
+    <h4 class="text-center">Avalie a palestra</h4>
+    <div ng-init="rating = nota"></div>
+    <div class="star-rating text-center" ng-click="avaliar(rating)" data-max="5" rating-value="rating" star-rating></div>
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <textarea id="comentario" name="comentario" ng-model="comentario.texto" placeholder="Escreva um comentário"></textarea>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="SalvarComentario()">Comentar</button>
+      </div>
+    </ion-content>
+  </ion-view>

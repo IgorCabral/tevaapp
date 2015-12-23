@@ -1,0 +1,11 @@
+<ion-view view-title="Participantes">
+  <ion-content>
+    <ion-list>
+        <a class="item item-avatar" collection-repeat="participante in participantes" href="#/teva/perfilparticipante/{{participante.id_participante}}">
+          <img ng-src="{{participante.img == null ? 'img/usuario.png' : participante.img}}">
+          <h2>{{participante.nome}}</h2>
+          <p>{{participante.grupo.nome_grupo_participante}}</p>
+        </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

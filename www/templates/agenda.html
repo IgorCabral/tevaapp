@@ -1,0 +1,9 @@
+<ion-view view-title="Agenda">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-text-wrap" ng-repeat="agenda in Agendas" href="#/teva/AgendaPalestras/{{agenda.id_agenda}}">
+      {{agenda.nome_agenda}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

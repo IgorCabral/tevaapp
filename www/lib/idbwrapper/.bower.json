@@ -1,0 +1,17 @@
+{
+  "name": "idbwrapper",
+  "description": "A cross-browser wrapper for IndexedDB",
+  "main": "idbstore.js",
+  "version": "1.6.1",
+  "dependencies": {},
+  "homepage": "https://github.com/jensarps/IDBWrapper",
+  "_release": "1.6.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.6.1",
+    "commit": "5db1769a4d2a311458de36d82ddd260c8f00da5e"
+  },
+  "_source": "git://github.com/jensarps/IDBWrapper.git",
+  "_target": "~1.6.1",
+  "_originalSource": "idbwrapper"
+}

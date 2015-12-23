@@ -1,0 +1,33 @@
+{
+  "name": "idb-wrapper",
+  "version": "1.6.1",
+  "description": "A cross-browser wrapper for IndexedDB",
+  "keywords": [
+    "storage",
+    "offline",
+    "IndexedDB"
+  ],
+  "author": "jensarps <mail@jensarps.de> (http://jensarps.de/)",
+  "repository": "git://github.com/jensarps/IDBWrapper.git",
+  "main": "idbstore",
+  "homepage": "https://github.com/jensarps/IDBWrapper",
+  "contributors": [
+    "Github Contributors (https://github.com/jensarps/IDBWrapper/graphs/contributors)"
+  ],
+  "bugs": {
+    "url": "https://github.com/jensarps/IDBWrapper/issues",
+    "email": "mail@jensarps.de"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~2.3.3",
+    "chai": "~3.3.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/jensarps/IDBWrapper/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {}
+}

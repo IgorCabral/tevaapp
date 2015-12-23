@@ -1,0 +1,22 @@
+<ion-view drag-content="false" hide-nav-bar="true" view-title="Login">
+  <ion-content>
+    <img alt="" class="destaque-img" src="img/home/01.jpg"/>
+    <div class="col col-80 col-offset-10 text-center">
+      <h2 class="teva-color">Bem vindo</h2>
+      <span>Insira seu email e senha</span>
+      <form ng-submit="Logar()" style="margin-top:20px;">
+        <div class="list">
+          <label class="item item-input">
+            <input class="text-center" ng-model="usuario.email" ng-required="string" placeholder="Email" type="email">
+          </label>
+          <label class="item item-input">
+            <input class="text-center" ng-model="usuario.senha" ng-required="string" placeholder="Senha" type="password">
+          </label>
+        </div>
+        <label>
+          <button class="button button-block button-teva" ng-hide="!PodeLogar" type="submit">Entrar</button>
+        </label>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

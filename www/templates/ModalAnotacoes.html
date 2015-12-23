@@ -1,0 +1,14 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Anotações</h1>
+    <button class="button button-clear button-primary" ng-click="modal.hide()">Cancelar</button>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="list">
+      <label class="item item-input text">
+        <textarea class="msd-elastic" cols="5" id="anotacao" name="anotacao" ng-model="anotacao.texto" placeholder="Escrever..." rows="5"></textarea>
+      </label>
+      <button class="button button-full button-positive" ng-click="salvarAnotacao()">Salvar</button>
+    </div>
+  </ion-content>
+</ion-modal-view>

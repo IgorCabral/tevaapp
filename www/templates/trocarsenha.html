@@ -1,0 +1,20 @@
+<ion-view view-title="Login" hide-nav-bar="true" drag-content="false">
+  <ion-content>
+    <img alt="" class="destaque-img" src="img/home/01.jpg"/>
+    <div class="col col-67 col-offset-20 text-center">
+      <h2 class="teva-color">Altere sua senha</h2>
+      <span>Insira sua nova porra de senha abaixo seu maldito</span>
+      <form ng-submit="salvarSenha(novaSenha)" style="margin-top:20px;">
+        <div class="list">
+          <label class="item item-input">
+            <input class="text-center" type="password" placeholder="Nova senha" ng-model="novaSenha">
+          </label>
+
+          <label class="item">
+            <button class="button button-block button-teva" type="submit" >salvar senha</button>
+          </label>
+        </div>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

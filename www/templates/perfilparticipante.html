@@ -1,0 +1,16 @@
+<ion-view disable-back-button="true" view-title="Perfil {{participante.nome}}">
+  <ion-content>
+    <div class="list card">
+
+      <div class="item">
+        <h2>{{participante.nome}}</h2>
+        <p>{{participante.grupo.nome_grupo_participante}}</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" ng-if="online" ng-src="{{'img/participantes/' + (participante.foto_url || imagemDefault) + '.jpg'}}"/>
+        <img class="full-image" ng-if="!online" ng-src="{{imagemDefault}}"/>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

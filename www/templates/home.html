@@ -1,0 +1,78 @@
+<ion-view  view-title="Convenção teva">
+
+  <ion-content>
+    <ion-refresher pulling-text="Atualizar..."></ion-refresher>
+    <div class="item item-divider animated fadeInDown alert-box item-energized text-center" ng-if="alerta">
+      <p>{{msg}}</p>
+    </div>
+    <div class="widget-container">
+      <div class="row">
+        <div class="col animated zoomIn">
+          <a class="home-link" ui-sref="teva.noticias">
+            <div class="card card-10">
+              <div class="item item-text-wrap home-button">
+                <i class="ion-paper-airplane"></i>
+                <h2>Notícias</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col animated zoomIn">
+          <a class="home-link" ui-sref="teva.agenda">
+            <div class="card card-10">
+              <div class="item item-text-wrap home-button">
+                <i class="ion-calendar"></i>
+                <h2>Agenda</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col animated zoomIn">
+          <a class="home-link" ui-sref="teva.grupospalestrantes">
+            <div class="card card-10">
+              <div class="item item-text-wrap home-button">
+                <i class="ion-mic-a"></i>
+                <h2>Palestrantes</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col animated zoomIn">
+          <a class="home-link" ui-sref="teva.gruposparticipantes">
+            <div class="card card-10">
+              <div class="item item-text-wrap home-button">
+                <i class="ion-person-stalker"></i>
+                <h2>Participantes</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col animated zoomIn">
+          <a class="home-link" ui-sref="teva.interativo">
+            <div class="card card-10">
+              <div class="item item-text-wrap home-button">
+                <i class="ion-lightbulb"></i>
+                <h2>Interativo</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col animated zoomIn">
+          <a class="home-link" ui-sref="teva.quiz">
+            <div class="card card-10">
+              <div class="item item-text-wrap home-button">
+                <i class="ion-trophy"></i>
+                <h2>Quiz</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

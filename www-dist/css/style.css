@@ -1,0 +1,239 @@
+/* Empty. Add your own CSS if you like */
+
+body {
+  padding-top: 20px;
+  background-color: #00947e;
+}
+.white {
+  color: #fff !important;
+}
+.img-title {
+  width: 100%;
+  padding: 15px 20px;
+}
+.button-teva {
+  background-color: #00947e !important;
+  border: none !important;
+  color: #fff !important;
+}
+.teva-bg {
+  background-color: #00947e !important;
+}
+.teva-color {
+  color: #00947e !important;
+}
+.bar-teva {
+  background-color: #00947e;
+  color: #fff;
+}
+.bar.bar-teva .title {
+  color: #fff;
+}
+.bar.bar-teva .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before {
+  color: #fff;
+}
+.destaque-img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+.card {
+  /* width: 100% !important; */
+}
+.fade.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+
+/* The finishing CSS styles for the enter animation */
+
+.fade.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.fadein.ng-enter {
+  -webkit-animation: fadeInLeft 1s;
+  animation: fadeInLeft 1s;
+}
+.fadein.ng-enter-stagger {
+  -webkit-animation-delay: 100ms;
+  animation-delay: 100ms;
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration: 0;
+  animation-duration: 0;
+}
+.rating {
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+ul.rating {
+  display: inline-block;
+}
+.rating li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.rating .filled {
+  color: #f1c40f;
+}
+.img-perfil {
+  width: 30px;
+  border-radius: 50%;
+}
+.img-perfil-g {
+  width: 100%;
+  margin-bottom: -5px;
+}
+.menu-teva {
+  color: #005246;
+}
+.menu-teva ion-item a {
+  color: #005246;
+  /* padding: 10px 5px 10px 13px !important; */
+  font-size: 19px;
+  vertical-align: middle;
+}
+.menu-teva ion-item a i {
+  font-size: 20px;
+  vertical-align: text-bottom;
+}
+.menu-teva ion-item i {
+  font-size: 20px;
+  vertical-align: text-bottom;
+}
+.iconmenu {
+  color: #00947E;
+  display: inline-block;
+  width: 30px !important;
+  text-align: center;
+}
+.qualitymenu {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+}
+.qualitymenu p {
+  font-size: 10px !important;
+  margin-top: 6px;
+  color: #848484;
+}
+.qualitymenu a {
+  color: #00947E;
+  text-decoration: none;
+  font-weight: 700;
+}
+.qualitymenu img {
+  width: 70px;
+  opacity: 0.6;
+}
+.home-button {
+  height: 160px;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  background: rgba(0,148,126,1);
+  background: -moz-linear-gradient(top, rgba(0,148,126,1) 0%, rgba(0,148,126,1) 39%, rgba(104,204,189,1) 83%, rgba(0,148,126,1) 93%, rgba(34,54,17,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,148,126,1)), color-stop(39%, rgba(0,148,126,1)), color-stop(83%, rgba(104,204,189,1)), color-stop(93%, rgba(0,148,126,1)), color-stop(100%, rgba(34,54,17,1)));
+  background: -webkit-linear-gradient(top, rgba(0,148,126,1) 0%, rgba(0,148,126,1) 39%, rgba(104,204,189,1) 83%, rgba(0,148,126,1) 93%, rgba(34,54,17,1) 100%);
+  background: -o-linear-gradient(top, rgba(0,148,126,1) 0%, rgba(0,148,126,1) 39%, rgba(104,204,189,1) 83%, rgba(0,148,126,1) 93%, rgba(34,54,17,1) 100%);
+  background: -ms-linear-gradient(top, rgba(0,148,126,1) 0%, rgba(0,148,126,1) 39%, rgba(104,204,189,1) 83%, rgba(0,148,126,1) 93%, rgba(34,54,17,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,148,126,1) 0%, rgba(0,148,126,1) 39%, rgba(104,204,189,1) 83%, rgba(0,148,126,1) 93%, rgba(34,54,17,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00947e', endColorstr='#223611', GradientType=0 );
+}
+.home-button h2 {
+  color: #fff;
+  font-size: 4vw;
+  display: block;
+  line-height: 45px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.76);
+  -moz-text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+  -o-text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+  -webkit-text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+}
+@media screen and (min-width: 900px) {
+  .home-button h2 {
+    font-size: 24px;
+  }
+}
+.home-button i {
+  color: #fff;
+  font-size: 25px;
+  display: block;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.76);
+  -moz-text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+  -o-text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+  -webkit-text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+  font-size: 40px;
+  padding: 10px;
+  display: block;
+}
+.card-10 {
+  margin: 10px 10px !important;
+}
+.btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn:active {
+  filter: brightness(120%);
+}
+.home-link {
+  text-decoration: none !important;
+}
+.widget-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.noticia-box {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.anotacoes a {
+  color: #387EF5;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+}
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+#map {
+  width: 100%;
+  height: 100%;
+}
+.scroll {
+  height: 100%;
+}
+.bar-footer {
+  height: 64px !important;
+}
+.trofeu {
+  height: 30px;
+  font-size: 25px;
+  display: block;
+}
+.ouro {
+  color: #FFD700;
+}
+.prata {
+  color: #C0C0C0;
+}
+.bronze {
+  color: #CD7F32;
+}

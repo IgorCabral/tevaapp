@@ -1,0 +1,36 @@
+<ion-view view-title="{{AgendaInfo.nome_agenda}}">
+  <ion-content>
+    <div class="item item-input item-select">
+      <i class="ion-ios-search"></i>
+      <input ng-model="searchData.$" placeholder="Buscar" type="text">
+      <select ng-model="searchData.inicio">
+        <option selected="true" value="">Todos os Dias</option>
+        <option ng-repeat="data in Datas" value="{{data}}">{{data | date:'dd/MM/yyyy'}}</option>
+      </select>
+    </div>
+    <ion-list>
+      <div class="item text-center" ng-show="(Palestras | filter:searchData).length == 0">
+        <h2>Nenhum resultado encontrado.</h2>
+      </div>
+      <div ng-repeat="data in Datas | filter:searchData.inicio ">
+        <div class="item item-divider text-center" ng-hide="(Palestras | filter:data  | filter:searchData).length == 0">
+          <h2>
+            <i class="ion-calendar"></i>
+            {{data | date:'dd/MM'}}</h2>
+        </div>
+        <a class="item item-text-wrap" href="#/teva/palestra/{{palestra.id_palestra}}" ng-repeat="palestra in Palestras | filter:data | filter:searchData">
+          <h2>{{palestra.tema}}</h2>
+          <p>
+            <i class="ion-clock"></i>
+            {{palestra.inicio | date:'HH:mm'}}
+            -
+            {{palestra.fim | date:'HH:mm'}}
+          </p>
+          <div ng-repeat="palestrante in palestra.palestrantes">
+            <p>{{palestrante.nome}}</p>
+          </div>
+        </a>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,9 @@
+<ion-view view-title="Grupos Participantes">
+  <ion-content>
+    <ion-list>
+      <a class="item " collection-repeat="grupo in GruposParticipantes" href="#/teva/participantes/{{grupo.id_grupo_participante}}">
+        <h2>{{grupo.nome_grupo_participante}}</h2>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

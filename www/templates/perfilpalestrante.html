@@ -1,0 +1,39 @@
+<ion-view disable-back-button="true" view-title="Perfil - {{palestrante.nome}}">
+  <ion-content>
+    <div class="list card">
+      <div class="item text-center">
+        <h2>{{palestrante.nome}}</h2>
+      </div>
+
+      <div class="item item-body ">
+        <img class="full-image" ng-if="online" ng-src="{{'img/palestrantes/' + (palestrante.foto_url || imagemDefault) + '.jpg'}}"/>
+        <img class="full-image" ng-if="!online" ng-src="{{imagemDefault}}"/>
+        <p class="text-justify" ng-bind-html="palestrante.minicurriculo"></p>
+      </div>
+    </div>
+
+    <h4 class="text-center">Palestras</h4>
+
+    <ion-item ng-repeat="palestra in Palestras | filter:searchData" href="#/teva/palestra/{{palestra.id_palestra}}">
+          <div class="card ">
+            <div class="item item-divider">
+              {{palestra.tema}}
+            </div>
+            <div class="item item-text-wrap ">
+              <div class="col">
+                  <i class="ion-calendar"></i> {{palestra.inicio | date:'dd/MM/yyyy'}}
+                  <i class="ion-clock"></i>{{palestra.inicio | date:'HH:mm'}} -  {{palestra.fim | date:'HH:mm'}}
+              </div>
+              <div ng-repeat="palestrante in palestra.palestrantes" class="col">
+                    <div class="item item-avatar">
+                      <img class="full-image" ng-if="online" ng-src="{{'img/palestrantes/' + (palestrante.foto_url || imagemDefault) + '.jpg'}}"/>
+                      <img class="full-image" ng-if="!online" ng-src="{{imagemDefault}}"/>
+                      <h2>{{palestrante.nome}}</h2>
+                      <p>{{palestrante.cargo}}</p>
+                    </div>
+              </div>
+            </div>
+          </div>
+    </ion-item>
+  </ion-content>
+</ion-view>

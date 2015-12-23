@@ -1,0 +1,12 @@
+<ion-view view-title="Palestrantes">
+  <ion-content>
+    <ion-list>
+      <a class="item item-avatar" collection-repeat="palestrante in palestrantes" href="#/teva/perfilpalestrante/{{palestrante.id_palestrante}}">
+        <img ng-if="online" ng-src="{{'img/palestrantes/' + (palestrante.foto_url || imagemDefault) + '.jpg'}}"/>
+        <img ng-if="!online" ng-src="{{imagemDefault}}"/>
+        <h2>{{palestrante.nome}}</h2>
+        <p>{{palestrante.grupo.nome_grupo_palestrante}}</p>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

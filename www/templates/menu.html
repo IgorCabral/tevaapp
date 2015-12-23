@@ -1,0 +1,111 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-teva">
+      <ion-nav-back-button class="white">Voltar</ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <a class="button button-icon button-clear" href="#" menu-toggle="right"><img class="img-perfil" ng-src="{{palestrante.img == null ? 'img/usuario.png' : palestrante.img}}"></a>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-teva">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content>
+      <img alt="logo Teva" class="img-title" src="img/logo.png"/>
+      <ion-list class="menu-teva">
+        <!--<ion-item menu-close ng-click="login()">
+          Login
+        </ion-item>
+      -->
+        <ion-item href="#/teva/home" menu-close>
+          <div class="iconmenu">
+            <i class="ion-reply"></i>
+          </div>Início
+        </ion-item>
+        <ion-item href="#/teva/noticias" menu-close>
+          <div class="iconmenu">
+            <i class="ion-paper-airplane"></i>
+          </div>
+          Notícias
+        </ion-item>
+        <ion-item href="#/teva/agenda" menu-close>
+          <div class="iconmenu">
+            <i class="ion-calendar"></i>
+          </div>
+          Agenda
+        </ion-item>
+        <ion-item href="#/teva/grupospalestrantes" menu-close>
+          <div class="iconmenu">
+            <i class="ion-mic-a"></i>
+          </div>
+          Palestrantes
+        </ion-item>
+        <ion-item href="#/teva/gruposparticipantes" menu-close>
+          <div class="iconmenu">
+            <i class="ion-person-stalker"></i>
+          </div>
+          Participantes
+        </ion-item>
+        <ion-item href="#/teva/interativo" menu-close>
+          <div class="iconmenu">
+            <i class="ion-lightbulb"></i>
+          </div>
+          Interativo
+        </ion-item>
+        <ion-item href="#/teva/quiz" menu-close>
+          <div class="iconmenu">
+            <i class="ion-trophy"></i>
+          </div>
+          Quiz
+        </ion-item>
+        <ion-item href="#/teva/mapa" menu-close>
+          <div class="iconmenu">
+            <i class="ion-map"></i>
+          </div>
+          Mapa
+        </ion-item>
+        <div class="item item-divider">
+
+        </div>
+        <ion-item menu-close ng-click="atualizar()">
+          <div class="iconmenu">
+            <i class="ion-refresh"></i>
+          </div>
+          <a>Atualizar aplicativo</a>
+        </ion-item>
+      </ion-list>
+      <div class="qualitymenu">
+        <img alt="" src="img/qualitydigital.png"/>
+        <p>Desenvolvido por
+          <a href="http://qualitydigital.com.br/">Quality Digital</a>
+        </p>
+      </div>
+    </ion-content>
+  </ion-side-menu>
+
+  <ion-side-menu side="right">
+    <ion-header-bar class="bar-teva">
+      <h1 class="title">{{participante.nome}}</h1>
+    </ion-header-bar>
+    <ion-content>
+      <img class="img-perfil-g" ng-src="{{palestrante.img == null ? 'img/usuario.png' : palestrante.img}}">
+      <ion-list>
+        <ion-item href="#/teva/home" menu-close>
+          <i class="ion-compose"></i>
+          Anotações
+        </ion-item>
+        <ion-item href="#/teva/logout" menu-close>
+          <i class="ion-power"></i>
+          Sair
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

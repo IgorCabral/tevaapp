@@ -1,0 +1,19 @@
+{
+  "name": "animatejs",
+  "version": "1.0.1",
+  "main": "dist/browser.js",
+  "ignore": [
+    "**/*",
+    "!dist/browser.js"
+  ],
+  "homepage": "https://github.com/mciparelli/animate",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "4b7691cc603a7b28eca10bcf11afd7ea1c189304"
+  },
+  "_source": "git://github.com/mciparelli/animate.git",
+  "_target": "~1.0.1",
+  "_originalSource": "animatejs"
+}

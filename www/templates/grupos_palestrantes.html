@@ -1,0 +1,9 @@
+<ion-view view-title="Grupos Palestrantes">
+  <ion-content>
+    <ion-list>
+      <a class="item " collection-repeat="grupo in GrupoPalestrantes" href="#/teva/palestrantes/{{grupo.id_grupo_palestrante}}">
+        <h2>{{grupo.nome_grupo_palestrante}}</h2>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>
